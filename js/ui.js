@@ -229,6 +229,10 @@ export async function renderAgent(agent) {
     inventoryCapacityLabel.textContent = String(agent.inventoryCapacity ?? 30);
   }
   
+  // Montrer le bouton de déconnexion quand un agent est connecté
+  const logoutBtn = document.getElementById('logoutBtn');
+  if (logoutBtn) logoutBtn.classList.remove('hidden');
+
   // openDashboardView() removed - was forcing dashboard view and overwriting other screens
 }
 

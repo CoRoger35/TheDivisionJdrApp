@@ -22,7 +22,7 @@ export function scrollToTop() {
  */
 export function showSection(name) {
   // Obtenir toutes les sections
-  const sectionIds = ['landing', 'createAgent', 'mainPage', 'competencesView'];
+  const sectionIds = ['landing', 'createAgent', 'mainPage', 'competencesView', 'agentWaitingScreen'];
   sectionIds.forEach((id) => {
     const section = document.getElementById(id);
     if (section) section.classList.remove('active-page');
